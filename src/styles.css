@@ -1,0 +1,93 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body{
+  background: #200122;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to lefr, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black; /*    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgb(56, 4, 4);  /* creates padding around scroll thumb */
+  animation: ease
+}
+
+.img-wrapper{
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: .67;
+    transition: all 1s;
+    animation: move-banner-btn-p 2s;
+}
+@keyframes move-banner-btn-p {
+    0%{
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.img-wrapper:hover{
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.card-body {
+  background: black;
+}
+
+.carrousel-img{
+  width: 40em;
+  height: 30em;
+}
+
+.int-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card-body{
+  background: black;
+
+}
+.card-img{
+  opacity: .6;
+  transition: all 2s;
+}
+
+.card-img:hover{
+  opacity: 1;
+}
+
+.img-show{
+  margin-top: .4em;
+  box-shadow: 0px 0px 9px 5px black;
+  opacity: .55;
+  transition: opacity 1s;
+}
+
+.img-show:hover{
+  opacity: 1;
+}
+
+.table-wrapper{
+  background: #200122;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.table{
+  border: 100px solid black;
+}

@@ -1,0 +1,26 @@
+<div ><img class="img-show" src="assets/img/show.jpg" style="width: 100%; height:30rem; margin-bottom: 2rem;" alt=""></div>
+<div class="table-wrapper mx-auto col-4">
+  <table class="table text-white">
+    <tr class="bg-light text-dark">
+      <th>Cidade</th>
+      <th>Data</th>
+      <th>Local</th>
+      <th>Valor</th>
+    </tr>
+    <tr  *ngFor="let show of shows">
+      <td>
+        {{show.cidade}}
+      </td>
+      <td>
+        {{show.data}}
+      </td>
+      <td>
+        {{show.local}}
+      </td>
+      <td>
+        R${{show.valor}},00
+      </td>
+    </tr>
+  </table>
+
+</div>
